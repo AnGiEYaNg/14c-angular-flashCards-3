@@ -34,16 +34,16 @@ app.controller('MainController', function ($scope, FlashCardsFactory, ScoreFacto
 		$scope.cardCategory = category
 	}
 
-	$scope.answerQuestion = function (answer, flashCard) {
-		if (!flashCard.answered) {
-			flashCard.answered = true;
-			flashCard.answeredCorrectly = answer.correct;
+	// $scope.answerQuestion = function (answer, flashCard) {
+	// 	if (!flashCard.answered) {
+	// 		flashCard.answered = true;
+	// 		flashCard.answeredCorrectly = answer.correct;
 			
-			flashCard.answeredCorrectly ? ScoreFactory.correct++ : ScoreFactory.incorrect++
+	// 		flashCard.answeredCorrectly ? ScoreFactory.correct++ : ScoreFactory.incorrect++
 			
-		}
+	// 	}
 
-	}
+	// }
 
 
 });
